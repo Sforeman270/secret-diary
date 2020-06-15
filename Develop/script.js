@@ -31,24 +31,24 @@ var identifiedSpecialCharacter;
 
 //function for the prompt to verify the numbers of character needed in the password
 function generatePassword() {
-  var identifiedLength = (prompt("Hey user how many numbers of character do you want your password to generate."));
+  var identifiedLength = (prompt("Hi User! How long do you want your password to be?"));
 
   while(identifiedLength <= 7 || identifiedLength >= 129) {
-    alert("Hey user your password should be within 8-128");
-    var identifiedLength = (prompt("Hey user how many numbers of character do hou want your password to generate."));
+    alert("Your password should be within 8-128 characters");
+    var identifiedLength = (prompt("Hi User! How long do you want your password to be?"));
   }
 
-  var identifiedNumber = confirm("Hey user click that you want to have numeric character");
-  var identifiedLowercase = confirm("Hey user click that you want to have lowercase");
-  var identifiedUpperCase = confirm("Hey user click that you want to have uppercase");
-  var identifiedSpecialCharacter = confirm("Hey user clcick that you want to have special character");
+  var identifiedNumber = confirm("Click if you want to have any numeric characters.");
+  var identifiedLowercase = confirm("Click if you want to have any lowercase characters.");
+  var identifiedUpperCase = confirm("Click if you want to have any uppercase characters.");
+  var identifiedSpecialCharacter = confirm("Click if you want any special characters.");
 
   while(identifiedSpecialCharacter === false && identifiedUpperCase === false && identifiedNumber === false && identifiedLowercase === false) {
-    alert("Hey user you need to choose at least one option");
-    var identifiedNumber = confirm("Hey user click that you want to have numeric character");
-    var identifiedLowercase = confirm("Hey user click that you want to have lowercase");
-    var identifiedUpperCase = confirm("Hey user click that you want to have uppercase");
-    var identifiedSpecialCharacter = confirm("Hey user clcick that you want to have special character");
+    alert("Hi User! You need to choose at least one option.");
+    var identifiedNumber = confirm("Click if you want to have any numeric characters.");
+    var identifiedLowercase = confirm("Click if you want to have any lowercase characters.");
+    var identifiedUpperCase = confirm("Click if you want to have any uppercase characters.");
+    var identifiedSpecialCharacter = confirm("Click if you want to have any special characters.");
   }
 
   var passwordElement = []
