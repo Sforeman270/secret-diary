@@ -10,9 +10,10 @@ A password generator that randomly generates passwords according to chosen crite
 
 
 ## Website
-
+https://sforeman270.github.io/secret-diary/
 
 ## Screenshots
+
 
 ## Contribution
  Shadrea Foreman 
